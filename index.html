@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="app" class="container text-center">
+
+        <div class="heading">
+            <div class="heading-text">
+                <h1>Do</h1>
+            </div>
+            <div class="heading-text yellow">
+                <h1>Something</h1>
+            </div>
+        </div>
+
+
+        <div class="main-content-wrapper">
+
+            <div class="form-contents">
+                <span>
+                    <input type="text" name="" value="">
+                </span>
+                <span>
+                    <button type="button" name="button">Do This</button>
+                </span>
+            </div>
+            <div class="display-todos">
+                <ul id= "todo-list">
+                    <script id="todo-item" type="text/template">
+                        {{#todo}}
+                            <li>
+                                <span class="list-text">{{.}}</span><span class="del">x</span>
+                            </li>
+                        {{/todo}}
+                    </script>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
